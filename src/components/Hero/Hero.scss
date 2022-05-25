@@ -1,20 +1,49 @@
 @import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
 
 .hero {
-    width: 25rem;
-    &__intro{
-        color: aqua;
+    width: 30rem;
+    padding: 2rem 3rem;
+    &__wrapper {
+       
+    }
+    &__intro {
+        color: $starwars-blue;
+        font-size: $subtitle;
     }
     &__title {
-        color: blue;
+        margin: 1rem 0;
+        color: $starwars-yellow;
+        font-size: $header-text;
     }
     &__subtitle{
-        color: bisque;
+        color: $starwars-yellow;
+        font-size: $subtitle;
     }
-    &__container{
+    &__container {
+        margin: 1rem 0;
+        text-align: left;
+        line-height: 1.5rem;
         &-content {
-            color: red;
+            color: $starwars-yellow;
             font-size: $small-text;
         }
+    }
+    &__link {
+        color: $starwars-yellow;
+        font-size: $small-text;
+    }
+    &__btn {
+        color: white;
+        font-size: $subtitle;
+        &:hover {
+            color: aqua;
+        }
+    }
+    &__icon-container {
+        @include flex-box(row, space-between, center);
+    }
+    &__icon--link {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(105%) contrast(104%);
     }
 }
