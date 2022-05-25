@@ -3,7 +3,13 @@
 
 .projects {
     &__wrapper {
-        margin: 0 3rem;
+        margin: 0 1rem;
+        @include tablet {
+            margin: 0 3rem;
+        }
+        @include desktop {
+            margin: 0 3rem;
+        }  
     }
     &__title {
         margin: 1rem 0;
@@ -11,11 +17,16 @@
         font-size: $header-text;
     }
     &__content {
-        width: 55%;
-        height: 25rem;
         border: 2px solid white;
         border-radius: 15px;
         overflow: hidden;
+        @include desktop {
+            border: 2px solid white;
+            border-radius: 15px;
+            overflow: hidden; 
+            width: 62%;
+            height: 27rem; 
+        }
     }
     &__image{
         width: 100%;
@@ -27,30 +38,54 @@
         font-size: $header-text;
     }
     &__card {
-        @include flex-box(row, flex-start, center);
+        @include flex-box(column, flex-start, center);
+        // width: 100%;
+        @include tablet {
+            @include flex-box(column, center, center);
+            padding: 1rem 0 2rem 0;
+        }
+        @include desktop {
+            @include flex-box(row, space-between, center);
+        }
         &-info {
-            width: 45%;
-            height: 25rem;
-            padding: 0 0 0 4rem;
             @include flex-box(column, flex-start, center);
+            @include tablet {
+                @include flex-box(row, center, center);
+                // width: 100%;
+            }
+            @include desktop {
+                @include flex-box(column, flex-start, center);
+            }
             &--container {
                 line-height: 1.5rem;
             }
         }
+        &-container {
+            @include tablet {
+                width: 35rem;
+            }
+            @include desktop {
+                width: 25rem;
+            }
+        }
+        
     }
     &__subtitle {
-        margin: 0 0 4rem 0;
+        margin-bottom: 1.25rem;
         color: $starwars-yellow;
-        font-size: $header-text;
+        font-size: $subtitle;
+        @include desktop {
+            margin: 0 0 2rem 0;
+        }
     }
     &__description {
         color: $starwars-yellow;
         font-size: $small-text;
-        text-align: left;
+        text-align: justify;
     }
     &__links {
-        width: 20rem;
-        margin-top: 2.5rem;
+        margin: 1rem 1rem 1.5rem 1rem;
+        width: 100%;
         @include flex-box(row, space-between, center);
         &-link {
             color: white;
@@ -58,6 +93,15 @@
             &:hover {
                 color: $starwars-blue;
             }
+        }
+        @include tablet {
+            @include flex-box(column, center, center);
+            margin: 0;
+        }
+        @include desktop {
+            width: 20rem;
+            margin-top: 2.5rem;
+            @include flex-box(row, space-between, center);
         }
     }
 }

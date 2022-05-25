@@ -10,13 +10,13 @@ export const Hero: React.FC = () => {
            <div className="hero__wrapper">
                 <h3 className="hero__intro">Hi, my name is ...</h3>
                 <h1 className="hero__title">Brodie Snelling</h1>
-                <h2 className="hero__subtitle">Web Developer, Junior Software Developer</h2>
+                <h2 className="hero__subtitle">Software Developer</h2>
                 <div className="hero__container">
                     <p className="hero__container-content">
                         I'm a developer from Canada with a background in Mechanical Engineering (EIT) and a 
                         strong interest in cloud computing, Software Engineering and Web Development. I'm also an 
                         <a className='hero__link' href='https://www.credly.com/badges/3a435e50-de8a-44d2-814f-76b4a867926b'> AWS Certified Solutions Architect - Associate</a>.
-                        Click the links bellow to see my resume, GitHub and LinkedIn profile
+                        Click the links bellow to see my resume, GitHub and LinkedIn profiles.
                     </p>
                 </div>
                 <div className='hero__icon-container'>
