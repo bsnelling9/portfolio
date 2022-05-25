@@ -3,13 +3,61 @@
 
 .projects {
     &__wrapper {
-        margin: 0 10rem;
+        margin: 0 3rem;
+    }
+    &__title {
+        margin: 1rem 0;
+        color: $starwars-yellow;
+        font-size: $header-text;
+    }
+    &__content {
+        width: 55%;
+        height: 25rem;
+        border: 2px solid white;
+        border-radius: 15px;
+        overflow: hidden;
     }
     &__image{
         width: 100%;
+        height: 100%;
     }
-    // &__container {
-    //     width: 50rem;
-    //     height: 20rem;
-    // }
+    &__name { 
+        margin: 1rem 0;
+        color: $starwars-blue;
+        font-size: $header-text;
+    }
+    &__card {
+        @include flex-box(row, flex-start, center);
+        &-info {
+            width: 45%;
+            height: 25rem;
+            padding: 0 0 0 4rem;
+            @include flex-box(column, flex-start, center);
+            &--container {
+                line-height: 1.5rem;
+            }
+        }
+    }
+    &__subtitle {
+        margin: 0 0 4rem 0;
+        color: $starwars-yellow;
+        font-size: $header-text;
+    }
+    &__description {
+        color: $starwars-yellow;
+        font-size: $small-text;
+        text-align: left;
+    }
+    &__links {
+        width: 20rem;
+        margin-top: 2.5rem;
+        @include flex-box(row, space-between, center);
+        &-link {
+            color: white;
+            font-size: $subtitle;
+            &:hover {
+                color: $starwars-blue;
+            }
+        }
+    }
 }

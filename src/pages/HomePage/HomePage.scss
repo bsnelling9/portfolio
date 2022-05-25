@@ -3,6 +3,7 @@
 @import '../../styles/partials/variables';
 .home {
     width: 100%;
+    min-height: 1000px;
     background: url('../../assets/images/space.jpg');
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;

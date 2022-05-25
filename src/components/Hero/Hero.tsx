@@ -13,9 +13,10 @@ export const Hero: React.FC = () => {
                 <h2 className="hero__subtitle">Web Developer, Junior Software Developer</h2>
                 <div className="hero__container">
                     <p className="hero__container-content">
-                        I'm a developer from Canada with a background in mechanical engineering (EIT) and a 
-                        strong interest in cloud computing, software engineering and web development. I'm also an 
+                        I'm a developer from Canada with a background in Mechanical Engineering (EIT) and a 
+                        strong interest in cloud computing, Software Engineering and Web Development. I'm also an 
                         <a className='hero__link' href='https://www.credly.com/badges/3a435e50-de8a-44d2-814f-76b4a867926b'> AWS Certified Solutions Architect - Associate</a>.
+                        Click the links bellow to see my resume, GitHub and LinkedIn profile
                     </p>
                 </div>
                 <div className='hero__icon-container'>
