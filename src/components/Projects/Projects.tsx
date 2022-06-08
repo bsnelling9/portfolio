@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.scss';
-import Leep from '../../assets/images/leep-banner.png'
+import Leep from '../../assets/images/leep-banner.png';
+import Instock from '../../assets/images/instock-warehouse.png';
 
 export const Projects: React.FC = () => {
     return (
@@ -25,6 +26,25 @@ export const Projects: React.FC = () => {
                             <div className='projects__links'>
                                 <a className='projects__links-link' href='https://leep-can.netlify.app/'>Live Demo</a>
                                 <a className='projects__links-link' href='https://github.com/bsnelling9/Leep'>Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='projects__card'>
+                        <div className='projects__content'>
+                            <img className='projects__image' src={Instock} alt='instock warehouse list'/>
+                        </div>
+                        <div className='projects__card-info'>
+                            <div className='projects__card-container'>
+                                <h2 className='projects__name'>InStock . . .</h2>
+                                <h2 className='projects__subtitle'>Helping Warehouse Managers</h2>
+                                <div className='projects__card-info--container'>
+                                    <p className='projects__description'>Instock is a full stack web application with the aim of helping warehouse managers manage their inventory,
+                                    using React and Node.js Express.</p>
+                                </div>
+                            </div>
+                            <div className='projects__links'>
+                                {/* <a className='projects__links-link' href='https://leep-can.netlify.app/'>Live Demo</a> */}
+                                <a className='projects__links-link' href='https://github.com/bsnelling9/instock'>Source Code</a>
                             </div>
                         </div>
                     </div>

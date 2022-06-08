@@ -2,8 +2,11 @@
 @import '../../styles/partials/mixins';
 
 .hero {
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     &__wrapper {
+       max-width: 1280px;
        padding: 2rem 1.25rem;
        @include tablet {
            padding: 2rem 2rem;
