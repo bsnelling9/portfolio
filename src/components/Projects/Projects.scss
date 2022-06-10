@@ -23,13 +23,17 @@
     &__content {
         border: 2px solid white;
         border-radius: 15px;
-        overflow: hidden;
+        overflow: hidden; 
+        @include tablet {
+            margin-bottom: 2rem;
+        }
         @include desktop {
             border: 2px solid white;
             border-radius: 15px;
             overflow: hidden; 
             width: 62%;
             height: 27rem; 
+            margin-bottom: 0;
         }
     }
     &__image{
@@ -38,12 +42,11 @@
     }
     &__name { 
         margin: 1rem 0;
-        color: $starwars-blue;
+        color: $starwars-yellow;
         font-size: $header-text;
     }
     &__card {
         @include flex-box(column, flex-start, center);
-        // width: 100%;
         @include tablet {
             @include flex-box(column, center, center);
             padding: 1rem 0 2rem 0;
@@ -55,7 +58,6 @@
             @include flex-box(column, flex-start, center);
             @include tablet {
                 @include flex-box(row, center, center);
-                // width: 100%;
             }
             @include desktop {
                 @include flex-box(column, flex-start, center);
@@ -72,11 +74,10 @@
                 width: 25rem;
             }
         }
-        
     }
     &__subtitle {
         margin-bottom: 1.25rem;
-        color: $starwars-yellow;
+        color: $starwars-blue;
         font-size: $subtitle;
         @include desktop {
             margin: 0 0 2rem 0;
@@ -99,7 +100,8 @@
             }
         }
         @include tablet {
-            @include flex-box(column, center, center);
+            @include flex-box(column, null, center);
+            height: 10rem;
             margin: 0;
         }
         @include desktop {
