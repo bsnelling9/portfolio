@@ -59,7 +59,7 @@ export const Projects: React.FC = () => {
                                 <h2 className='projects__name'>Video Game</h2>
                                 <div className='projects__card-info--container'>
                                     <p className='projects__description'>'Video Game' is a souls like game that I'm making in Unity Game Engine as a hobby. The game will start out as a 1v1 
-                                    arena combat game where players battle each other or versus ai. With the aim of eventually being a 5v5 arena game vs ai or players. 
+                                    arena combat game where players battle each other or versus AI. With the aim of eventually being a 5v5 arena game vs AI or players. 
                                     </p>
                                 </div>
                             </div>
