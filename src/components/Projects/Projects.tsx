@@ -44,7 +44,7 @@ export const Projects: React.FC = () => {
                                 </div>
                             </div>
                             <div className='projects__links'>
-                                {/* <a className='projects__links-link' href='https://leep-can.netlify.app/'>Live Demo</a> */}
+                                {<a className='projects__links-link' href='https://brodieinstock.netlify.app/'>Live Demo</a>}
                                 <a className='projects__links-link' href='https://github.com/bsnelling9/instock'>Source Code</a>
                             </div>
                         </div>
