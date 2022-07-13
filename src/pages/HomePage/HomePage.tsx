@@ -9,7 +9,6 @@ export const HomePage: React.FC = () => {
         <div className="home">
             <Header />
             <Hero />
-            {/* <About /> */}
             <Projects />
         </div>
     )
